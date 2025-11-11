@@ -1,25 +1,15 @@
-Crowdfund Treasury
+🚀 Crowdfund Treasury (Plutus V3)
 
-A basic Plutus V3 smart contract on the Cardano blockchain for crowdfunding. People can send ADA to the script address. If the funding goal is reached before the deadline, the creator can collect the funds. Otherwise, contributors can claim a refund.
+Crowdfund Treasury is a simple crowdfunding smart contract built on the Cardano blockchain using Plutus V3.
+Anyone can contribute ADA to a treasury address. If the funding goal is reached before the deadline, the project creator can collect the funds.
+If the goal is not met, every contributor can claim a refund.
 
-Setup
+✨ Key Features
 
-Requires Haskell, Cabal, and a running Cardano node.
+✅ Plutus V3 on-chain validator
 
-Test on the Cardano Preview network.
+🎯 Funding goal + deadline based logic
 
-You need keys inside the test-keys/ folder (alice.skey, bob.skey, ding.skey).
+🔐 Secure fund collection & refund mechanism
 
-Commands
-
-cabal run SC check: Checks the setup.
-
-cabal run SC cbor-writer: Generates the CBOR file for the script.
-
-cabal run SC sAddr: Shows the script address.
-
-cabal run SC fund: Contribute ADA to the script.
-
-cabal run SC collect: Creator collects the funds.
-
-cabal run SC refund: Contributors claim a refund.
+🧪 Works on Cardano Preview Testnet
