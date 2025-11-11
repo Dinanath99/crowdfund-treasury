@@ -1,0 +1,60 @@
+# === Haskell build artifacts ===
+dist/
+dist-newstyle/
+cabal-dev/
+*.o
+*.hi
+*.chi
+*.chs.h
+*.dyn_o
+*.dyn_hi
+*.prof
+*.hp
+*.eventlog
+.stack-work/
+
+# === Cabal and GHC files ===
+cabal.project.local
+cabal.project.local~
+cabal.sandbox.config
+cabal.project.freeze
+*.conf
+*.cabal~
+*.log
+
+# === Plutus-specific / Playground ===
+*.plutus
+*.flat
+*.uplc
+*.cbor
+*.json
+
+# Generated scripts or emulator logs
+emulator.log
+*.generated.hs
+
+# === Editor / IDE ===
+# VSCode
+.vscode/
+# IntelliJ / Haskell IDE Engine
+.idea/
+.hie/
+.hie-bios/
+.hie-db/
+
+# === OS / Misc ===
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+*.bak
+
+# === Environment and Nix ===
+.envrc
+.env
+.nix-*
+result
+.cache/
+.cache/
+.nix-shell-history
+/plutus-playground-server/.env
